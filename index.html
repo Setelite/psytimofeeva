@@ -45,6 +45,18 @@ body{background:var(--paper)}
 .source-copy,.trust-item,.source-intro,.aspirations p{font-family:'Segoe UI',Arial,sans-serif;font-size:14px;line-height:1.8;font-weight:400}
 .source-copy strong{font:26px var(--serif)}.source-copy p{margin:0 0 16px}.source-quote h2{font-size:43px;line-height:1.15}.source-quote .btn{font-size:12px}
 @media(max-width:760px){.source-sub{font-size:27px}.source-copy,.trust-item,.source-intro,.aspirations p{font-size:14px;line-height:1.8}.source-quote h2{font-size:36px}.source-copy strong{font-size:26px}}
+
+/* Full portrait visible on the first mobile screen. */
+@media(max-width:760px){
+ html{scroll-padding-top:84px}
+ .hero{padding-top:12px;overflow:hidden}
+ .hero-grid{display:flex;flex-direction:column;gap:0}
+ .hero-grid>.hero-image{order:-1;width:100%;max-width:100%;margin:0;padding:0;min-height:0;height:calc(100vh - 178px);height:calc(100svh - 178px);max-height:760px;display:flex;align-items:center;justify-content:center}
+ .hero-image:before{display:none}
+ .hero-image img{display:block;width:auto;max-width:100%;height:100%;min-height:0;max-height:100%;aspect-ratio:auto;object-fit:contain;object-position:center;border-radius:20px;box-shadow:0 10px 28px #30281f16}
+ .hero-grid>div:first-child{padding:38px 0 25px}
+}
+@media(max-width:400px){.nav{gap:6px}.brand strong{font-size:14px}.brand small{font-size:6.5px}.mobile-header-cta{padding:0 10px}}
 </style>
 </head>
 <body>
